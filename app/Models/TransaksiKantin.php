@@ -5,10 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class transaksi_koperasi extends Model
+class TransaksiKantin extends Model
 {
     use HasFactory;
-
     protected $fillable = [
         'user_id',
         'produk_id',
