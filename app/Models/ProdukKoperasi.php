@@ -16,4 +16,5 @@ class ProdukKoperasi extends Model
         'jumlah',
         'deskripsi',
     ];
+    protected $table = "produk_koperasi";
 }

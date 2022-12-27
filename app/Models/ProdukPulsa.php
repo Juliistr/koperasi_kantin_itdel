@@ -15,4 +15,6 @@ class ProdukPulsa extends Model
         'gambar',
         'jumlah',
     ];
+
+    protected $table = "produk_pulsa";
 }

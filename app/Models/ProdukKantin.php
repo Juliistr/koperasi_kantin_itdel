@@ -16,4 +16,5 @@ class ProdukKantin extends Model
         'jumlah',
         'deskripsi',
     ];
+    protected $table = "produk_kantin";
 }
