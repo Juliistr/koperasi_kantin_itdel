@@ -10,7 +10,7 @@ class ProdukPulsaController extends Controller
 {
     public function pulsa(){
         $produkpulsa = ProdukPulsa::all();
-        return response()->json($produkpulsa);
+        return response()->json(["success" => 200, "data" => $produkpulsa]);
     }
 
     public function store($id){

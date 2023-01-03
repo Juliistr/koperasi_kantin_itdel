@@ -9,7 +9,7 @@ class RuanganController extends Controller
 {
     public function ruangan(){
         $ruangan = Ruangan::all();
-        return response()->json($ruangan);
+        return response()->json(["success" => 200, "data" => $ruangan]);
     }
 
     public function store($id){

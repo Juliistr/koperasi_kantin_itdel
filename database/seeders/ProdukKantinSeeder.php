@@ -14,14 +14,14 @@ class ProdukKantinSeeder extends Seeder
             [
                 'nama_produk' => 'Es Teh',
                 'harga' => '5000',
-                'gambar' => 'esteh.jpg',
+                'gambar' => 'images/esteh.jpg',
                 'jumlah' => '10',
                 'deskripsi' => 'Es Teh pakai/tidak pakai gula'
             ],
             [
                 'nama_produk' => 'Nasi Goreng Seafood',
                 'harga' => '6000',
-                'gambar' => 'nasigoreng.jpeg',
+                'gambar' => 'images/nasigoreng.jpeg',
                 'jumlah' => '10',
                 'deskripsi' => 'Nasi goreng pedas sedang/pedas banget',
             ],

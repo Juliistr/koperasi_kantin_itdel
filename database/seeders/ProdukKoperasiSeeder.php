@@ -19,14 +19,14 @@ class ProdukKoperasiSeeder extends Seeder
             [
                 'nama_produk' => 'pepsodent',
                 'harga' => '5000',
-                'gambar' => 'pepsoden.jpg',
+                'gambar' => 'images/pepsodent.jpg',
                 'jumlah' => '10',
-                'deskripsi' => 'Pebsoden Barang Bagus'
+                'deskripsi' => 'Pepsodent Barang Bagus'
             ],
             [
-                'nama_produk' => 'Shampo',
+                'nama_produk' => 'head and shoulders',
                 'harga' => '6000',
-                'gambar' => 'nasigoreng.jpeg',
+                'gambar' => 'images/head_and_shoulders.jpeg',
                 'jumlah' => '10',
                 'deskripsi' => 'Sampo untuk cowo',
             ],

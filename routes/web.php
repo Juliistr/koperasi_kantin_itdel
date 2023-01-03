@@ -5,6 +5,7 @@ use App\Http\Controllers\RuanganController;
 use App\Http\Controllers\ProdukPulsaController;
 use App\Http\Controllers\ProdukKantinController;
 use App\Http\Controllers\ProdukKoperasiController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,10 +21,14 @@ use App\Http\Controllers\ProdukKoperasiController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('auth',[AuthController::class, 'index'])->name('auth.index');
+Route::post('/api/login',[AuthController::class, 'do_login'])->name('auth.login');
+Route::post('/api/register',[AuthController::class, 'do_register'])->name('auth.register');
 
-
-Route::get('/produkpulsa', [ProdukPulsaController::class, 'pulsa'])->name('produkpulsa');
-Route::get('/produkkantin', [ProdukKantinController::class, 'kantin'])->name('produkkantin');
-Route::get('/produkkoperasi', [ProdukKoperasiController::class, 'koperasi'])->name('produkkoperasi');
-Route::get('/ruangan', [RuanganController::class, 'ruangan'])->name('ruangan');
+Route::get('/api/produkpulsa', [ProdukPulsaController::class, 'pulsa'])->name('produkpulsa');
+Route::get('/api/produkpulsa', [ProdukPulsaController::class, 'pulsa'])->name('produkpulsa');
+Route::get('/api/produkkantin', [ProdukKantinController::class, 'kantin'])->name('produkkantin');
+Route::get('/api/produkkantinterbaru', [ProdukKantinController::class, 'produkkantinterbaru'])->name('produkkantinterbaru');
+Route::get('/api/produkkoperasi', [ProdukKoperasiController::class, 'koperasi'])->name('produkkoperasi');
+Route::get('/api/ruangan', [RuanganController::class, 'ruangan'])->name('ruangan');
 

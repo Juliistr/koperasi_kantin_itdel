@@ -10,7 +10,12 @@ class ProdukKantinController extends Controller
 {
     public function kantin(){
         $produkkantin = ProdukKantin::all();
-        return response()->json($produkkantin);
+        return response()->json(["success" => true, "data" =>  $produkkantin]);
+    }
+
+    public function produkkantinterbaru(){
+        $produkkantin = ProdukKantin::all()->sortByDesc(["created_at"]);
+        return response()->json(["success" => true, "data" =>  $produkkantin]);
     }
 
     public function show($id){

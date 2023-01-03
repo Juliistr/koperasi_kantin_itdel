@@ -18,31 +18,31 @@ class ProdukPulsaSeeder extends Seeder
             [
                 'nama_produk' => 'Pulsa 10k Telkomsel',
                 'harga' => '10000',
-                'gambar' => 'icon_pulsa.jpeg',
+                'gambar' => 'images/icon_pulsa.jpeg',
                 'jumlah' => '10'
             ],
             [
                 'nama_produk' => 'Pulsa 25k Telkomsel',
                 'harga' => '25000',
-                'gambar' => 'icon_pulsa.jpeg',
+                'gambar' => 'images/icon_pulsa.jpeg',
                 'jumlah' => '10'
             ],
             [
                 'nama_produk' => 'Pulsa 50 Telkomsel',
                 'harga' => '50000',
-                'gambar' => 'icon_pulsa.jpeg',
+                'gambar' => 'images/icon_pulsa.jpeg',
                 'jumlah' => '10'
             ],
             [
                 'nama_produk' => 'Pulsa 75k Telkomsel',
                 'harga' => '75000',
-                'gambar' => 'icon_pulsa.jpeg',
+                'gambar' => 'images/icon_pulsa.jpeg',
                 'jumlah' => '10'
             ],
             [
                 'nama_produk' => 'Pulsa 100k Telkomsel',
                 'harga' => '100000',
-                'gambar' => 'icon_pulsa.jpeg',
+                'gambar' => 'images/icon_pulsa.jpeg',
                 'jumlah' => '10'
             ],
         );

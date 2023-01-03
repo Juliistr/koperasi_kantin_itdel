@@ -10,7 +10,7 @@ class ProdukKoperasiController extends Controller
 
     public function koperasi(){
         $produkkoperasi = ProdukKoperasi::all();
-        return response()->json($produkkoperasi);
+        return response()->json(["success" => 200, "data" => $produkkoperasi]);
     }
 
     public function show($id){
