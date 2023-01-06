@@ -26,9 +26,12 @@ Route::post('/api/login',[AuthController::class, 'do_login'])->name('auth.login'
 Route::post('/api/register',[AuthController::class, 'do_register'])->name('auth.register');
 
 Route::get('/api/produkpulsa', [ProdukPulsaController::class, 'pulsa'])->name('produkpulsa');
-Route::get('/api/produkpulsa', [ProdukPulsaController::class, 'pulsa'])->name('produkpulsa');
+Route::get('/api/produkpulsa/{id}', [ProdukPulsaController::class, 'show'])->name('produkpulsa.show');
 Route::get('/api/produkkantin', [ProdukKantinController::class, 'kantin'])->name('produkkantin');
+Route::get('/api/produkkantin/{id}', [ProdukKantinController::class, 'show'])->name('produkkantin.show');
 Route::get('/api/produkkantinterbaru', [ProdukKantinController::class, 'produkkantinterbaru'])->name('produkkantinterbaru');
 Route::get('/api/produkkoperasi', [ProdukKoperasiController::class, 'koperasi'])->name('produkkoperasi');
+Route::get('/api/produkkoperasi/{id}', [ProdukKantinController::class, 'show'])->name('produkkoperasi.show');
 Route::get('/api/ruangan', [RuanganController::class, 'ruangan'])->name('ruangan');
+Route::get('/api/ruangan/{id}', [RuanganController::class, 'show'])->name('ruangan.show');
 

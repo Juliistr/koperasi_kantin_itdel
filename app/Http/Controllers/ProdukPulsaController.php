@@ -13,8 +13,8 @@ class ProdukPulsaController extends Controller
         return response()->json(["success" => 200, "data" => $produkpulsa]);
     }
 
-    public function store($id){
+    public function show($id){
         $produkpulsa = ProdukPulsa::where(['id' => $id])->first();
-        return response()->json($produkpulsa);
+        return response()->json(["success" => 200, "data" => $produkpulsa]);
     }
 }

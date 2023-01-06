@@ -12,8 +12,8 @@ class RuanganController extends Controller
         return response()->json(["success" => 200, "data" => $ruangan]);
     }
 
-    public function store($id){
+    public function show($id){
         $ruangan = Ruangan::where(['id' => $id])->first();
-        return response()->json($ruangan);
+        return response()->json(["success" => 200, "data" => $ruangan]);
     }
 }

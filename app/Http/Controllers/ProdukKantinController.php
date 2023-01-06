@@ -20,6 +20,6 @@ class ProdukKantinController extends Controller
 
     public function show($id){
         $produkkantin = ProdukKantin::where(['id' => $id])->first();
-        return response()->json($produkkantin);
+        return response()->json(["success" => true, "data" =>$produkkantin]);
     }
 }

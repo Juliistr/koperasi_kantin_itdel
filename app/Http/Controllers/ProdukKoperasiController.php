@@ -15,6 +15,6 @@ class ProdukKoperasiController extends Controller
 
     public function show($id){
         $produkkoperasi = ProdukKoperasi::where(['id' => $id])->first();
-        return response()->json($produkkoperasi);
+        return response()->json(["success" => 200, "data" => $produkkoperasi]);
     }
 }

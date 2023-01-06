@@ -25,6 +25,77 @@ class ProdukKantinSeeder extends Seeder
                 'jumlah' => '10',
                 'deskripsi' => 'Nasi goreng pedas sedang/pedas banget',
             ],
+            [
+                'nama_produk' => 'Kombinasi Menu sarapan Pagi ',
+                'harga' => '100000',
+                'gambar' => 'images/kantin/pagi1.jpg',
+                'jumlah' => '30',
+                'deskripsi' => 'Menu makan Korean style pada pagi hari',
+            ],
+            [
+                'nama_produk' => 'Kombinasi Menu Makan siang ',
+                'harga' => '98000',
+                'gambar' => 'images/kantin/siang1.jpg',
+                'jumlah' => '30',
+                'deskripsi' => 'Menu makan Korean style pada Makan siang',
+            ],
+            [
+                'nama_produk' => 'Kombinasi Menu Makan Malam ',
+                'harga' => '90000',
+                'gambar' => 'images/kantin/Malam1.jpg',
+                'jumlah' => '30',
+                'deskripsi' => 'Menu makan Korean style pada Makan Malam',
+            ],
+            [
+                'nama_produk' => 'Kombinasi Menu sarapan Pagi ',
+                'harga' => '100000',
+                'gambar' => 'images/kantin/pagi2.jpg',
+                'jumlah' => '30',
+                'deskripsi' => 'Menu makan Korean style pada pagi hari',
+            ],
+            [
+                'nama_produk' => 'Kombinasi Menu Makan siang ',
+                'harga' => '98000',
+                'gambar' => 'images/kantin/siang2.jpg',
+                'jumlah' => '30',
+                'deskripsi' => 'Menu makan Korean style pada Makan siang',
+            ],
+            [
+                'nama_produk' => 'Kombinasi Menu Makan Malam ',
+                'harga' => '90000',
+                'gambar' => 'images/kantin/Malam2.jpg',
+                'jumlah' => '30',
+                'deskripsi' => 'Menu makan Korean style pada Makan Malam',
+            ],
+            [
+                'nama_produk' => 'Kombinasi Menu sarapan Pagi ',
+                'harga' => '100000',
+                'gambar' => 'images/kantin/pagi3.jpg',
+                'jumlah' => '30',
+                'deskripsi' => 'Menu makan Korean style pada pagi hari',
+            ],
+            [
+                'nama_produk' => 'Kombinasi Menu Makan siang ',
+                'harga' => '98000',
+                'gambar' => 'images/kantin/siang3.jpg',
+                'jumlah' => '30',
+                'deskripsi' => 'Menu makan Korean style pada Makan siang',
+            ],
+            [
+                'nama_produk' => 'Kombinasi Menu Makan Malam ',
+                'harga' => '90000',
+                'gambar' => 'images/kantin/Malam3.jpg',
+                'jumlah' => '30',
+                'deskripsi' => 'Menu makan Korean style pada Makan Malam',
+            ],
+            [
+                'nama_produk' => 'Kombinasi Menu Makan Malam ',
+                'harga' => '90000',
+                'gambar' => 'images/kantin/Malam4.jpg',
+                'jumlah' => '30',
+                'deskripsi' => 'Menu makan Korean style pada Makan Malam',
+            ],
+    
         );
         foreach($data AS $d){
             ProdukKantin::create([
